@@ -7,6 +7,18 @@ type DataCentreRegion =
     | Oceania
     | Korea
 
+type Item =
+    {
+        Id   : int
+        Name : string
+    }
+
+type Retainer =
+    {
+        Id   : string
+        Name : string
+    }
+
 type World =
     {
         Id         : int
@@ -20,18 +32,6 @@ and DataCentre =
         Name   : string
         Region : DataCentreRegion
         Worlds : World list
-    }
-
-type Item =
-    {
-        Id   : int
-        Name : string
-    }
-
-type Retainer =
-    {
-        Id   : string
-        Name : string
     }
 
 type MarketBoardListing =
