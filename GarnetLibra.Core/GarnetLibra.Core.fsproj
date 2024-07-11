@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Error.fs" />
+        <Compile Include="Model.fs" />
+        <Compile Include="Provider\Util.fs" />
+        <Compile Include="Provider\DataProvider.fs" />
+        <Compile Include="Provider\MarketBoardProvider.fs" />
+        <Compile Include="Http.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FSharp.Json.New" Version="0.4.2" />
+    </ItemGroup>
+
+</Project>
